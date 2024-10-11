@@ -10,6 +10,9 @@ import java.util.Map;
 
 public class App {
     public static void main(String[] args) {
+        // Create the 'posts' table in the SQLite database
+        Database.createTables();
+        
         // Set up Javalin
         Javalin app = Javalin.create().start(7000);
 
